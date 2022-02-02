@@ -36,6 +36,8 @@ public class Programa {
 		else {
 			System.out.println("\nA área do Triangulo Y é maior!");
 		}
+		
+		sc.close();
 
 	}
 
