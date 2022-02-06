@@ -28,6 +28,8 @@ public class Programa {
 		}else {
 			System.out.println("Aluno aprovado!");
 		}
+		
+		sc.close();
 			
 
 	}
