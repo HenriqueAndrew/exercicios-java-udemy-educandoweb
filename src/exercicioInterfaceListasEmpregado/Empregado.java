@@ -1,0 +1,44 @@
+package exercicioInterfaceListasEmpregado;
+
+public class Empregado {
+	
+	private int id;
+	private String nome;
+	private double salario;
+	
+	public Empregado() {
+		
+	}
+	
+	public Empregado(int id, String nome, double salario) {
+		this.id = id;
+		this.nome = nome;
+		this.salario = salario;
+	}
+	
+	public int getID() {
+		return id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+	
+	public double aumentoSalario(double porcentagem) {
+		return salario += salario * porcentagem/100.0;		
+	}
+	
+	public String toString() {
+		return "ID: " + this.id + "\nNome: " + this.nome + "\nSalário: " + String.format("%.2f", this.salario); 
+	}
+		
+
+}

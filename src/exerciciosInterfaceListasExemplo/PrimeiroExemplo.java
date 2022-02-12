@@ -1,4 +1,4 @@
-package exerciciosInterfaceListas;
+package exerciciosInterfaceListasExemplo;
 
 import java.util.ArrayList;
 import java.util.List;
