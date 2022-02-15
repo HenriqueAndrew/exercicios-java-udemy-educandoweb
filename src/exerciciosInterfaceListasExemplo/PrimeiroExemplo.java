@@ -40,8 +40,7 @@ public class PrimeiroExemplo {
 
 		System.out.println("\n------------------------------\n");
 
-		// convertendo lista para stream, faz operação lambda, e converte novamente para
-		// lista
+		// convertendo lista para stream, faz operação lambda, e converte novamente para lista
 		List<String> resultado = list.stream().filter(x -> x.charAt(0) == 'H').collect(Collectors.toList()); //Filtrando elementos que comecem com a letra 'H'
 		for (String x : resultado) {
 			System.out.println(x);
