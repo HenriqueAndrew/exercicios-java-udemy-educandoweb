@@ -13,7 +13,7 @@ public class Programa {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy"); //instanciando objeto da classe SimpleDateFormat com parametro simples, somente data
 		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); //instanciando objeto da classe SimpleDateFormat com parametro alternativo acrescentando hrs
 		SimpleDateFormat sdf3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-		sdf3.setTimeZone(TimeZone.getTimeZone("GMT"));
+		sdf3.setTimeZone(TimeZone.getTimeZone("GMT")); //convertendo para a hora GMT (Greenwich Mean Time))
 		
 		Date x1 = new Date(); //traz a data e hora atual
 		Date x2 = new Date(System.currentTimeMillis()); //alternativa para trazer data e hora atual
