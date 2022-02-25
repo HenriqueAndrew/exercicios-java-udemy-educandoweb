@@ -1,4 +1,4 @@
-package exercicioEnumeracoes;
+package exercicioEnumeracoesPedidos;
 
 public enum StatusPedido {
 	
