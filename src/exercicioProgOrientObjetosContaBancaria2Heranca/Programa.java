@@ -10,6 +10,35 @@ public class Programa {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		Conta conta1 = new Conta(01, "Alex", 0.0);
+		ContaComercial conta2 = new ContaComercial(02, "Maria", 5.0, 500.0);
+		
+		//UPCASTING
+		Conta conta3 = conta2; //convertendo contaComercial (classe filha) em Conta (classe pai)
+		System.out.println(conta3.getBalanco());
+		Conta conta4 = new ContaPoupanca(03, "Joao", 3.0, 0.01);
+		System.out.println(conta4.getBalanco());
+		
+		//DOWNCASTING
+		ContaComercial conta5 = (ContaComercial)conta3; //convertendo conta (classe pai) em contaComercial (classe filha)
+		conta5.emprestimo(100.0);
+		System.out.println(conta5.getBalanco());
+		
+		//Não é possível converter classe filha (contaPoupança) para outra classe filha (ContaComercial) 
+		if(conta4 instanceof ContaComercial) { //não passará pq a conta4 é instancia de ContaPoupanca
+			ContaComercial conta6 = (ContaComercial)conta4;
+			conta6.emprestimo(200.0);
+			System.out.println("emprestimo realizado");			
+		}
+		
+		if (conta4 instanceof ContaPoupanca) { //passará pq a conta4 é instancia de ContaPoupança
+			ContaPoupanca conta6 = (ContaPoupanca)conta4;
+			conta6.atualizaBalanco();
+			System.out.println("balanço atualizada");
+		}
+		
+		//----------------------------------------------
+		
 		ContaComercial conta = new ContaComercial();
 		
 		System.out.println("Digite o número da conta: ");
