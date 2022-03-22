@@ -38,7 +38,7 @@ public class Conta {
 	}
 	
 	public void saque (Double valor) {
-		balanco -= valor;
+		balanco -= valor + 5.0;
 	}
 	
 	public void deposito (Double valor) {

@@ -27,4 +27,12 @@ public class ContaComercial extends Conta{
 		}
 	}
 
+	@Override
+	public void saque(Double valor) {
+		super.saque(valor);
+		balanco -= 2.0;
+	}
+	
+	
+
 }

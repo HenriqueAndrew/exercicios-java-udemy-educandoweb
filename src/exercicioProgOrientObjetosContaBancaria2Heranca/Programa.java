@@ -11,6 +11,7 @@ public class Programa {
 		Scanner sc = new Scanner(System.in);
 		
 		Conta conta1 = new Conta(01, "Alex", 0.0);
+		System.out.println(conta1.getBalanco());
 		ContaComercial conta2 = new ContaComercial(02, "Maria", 5.0, 500.0);
 		
 		//UPCASTING
@@ -36,6 +37,19 @@ public class Programa {
 			conta6.atualizaBalanco();
 			System.out.println("balanço atualizada");
 		}
+		
+		//TESTES DE SOBREPOSIÇÃO (OVERRIDE)
+		Conta acc1 = new Conta(1001, "Alex", 1000.0);
+		acc1.saque(200.0);
+		System.out.println(acc1.getBalanco());
+		
+		Conta acc2 = new ContaPoupanca(1002, "Maria", 1000.0, 0.01);
+		acc2.saque(200.0);
+		System.out.println(acc2.getBalanco());
+		
+		Conta acc3 = new ContaComercial(1003, "Bob", 1000.0, 500.0);
+		acc3.saque(200.0);
+		System.out.println(acc3.getBalanco());
 		
 		//----------------------------------------------
 		
