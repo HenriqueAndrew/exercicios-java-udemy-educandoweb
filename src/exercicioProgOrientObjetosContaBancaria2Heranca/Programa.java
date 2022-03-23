@@ -38,7 +38,7 @@ public class Programa {
 			System.out.println("balanço atualizada");
 		}
 		
-		//TESTES DE SOBREPOSIÇÃO (OVERRIDE)
+		//TESTES DE SOBREPOSIÇÃO (OVERRIDE) - OBSERVAÇÃO: UTILIZADO TECNICA DE POLIMORFISMO NO METODO SAQUE 
 		Conta acc1 = new Conta(1001, "Alex", 1000.0);
 		acc1.saque(200.0);
 		System.out.println(acc1.getBalanco());
