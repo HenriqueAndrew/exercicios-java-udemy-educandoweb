@@ -1,4 +1,4 @@
-package exercicioTratamentoExceçãoHospedagem;
+package exercicioTratamentoExcecaoHospedagem;
 
 public class DatasException extends Exception{
 	

@@ -1,4 +1,4 @@
-package exercicioTratamentoExceçãoHospedagem;
+package exercicioTratamentoExcecaoHospedagem;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
