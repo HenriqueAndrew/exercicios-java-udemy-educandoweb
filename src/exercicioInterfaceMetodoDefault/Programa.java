@@ -20,6 +20,8 @@ public class Programa {
 		
 		System.out.print("Pagamento após " + meses + " meses: ");
 		System.out.println(String.format("%.2f", pagamento));
+		
+		sc.close();
 
 	}
 
